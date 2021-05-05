@@ -22,30 +22,35 @@
         <a class="nav-bar--hid__a" href="#">Home</a>
         <a class="nav-bar--hid__a" href="#">Our services</a>
         <a class="nav-bar--hid__a" href="#contact-form">Contact us!</a>
-        <button id="hide-menu" class="nav-bar--hid__a">Cerrar</button>
+        <button id="hide-menu" class="nav-bar--hid__a">Close</button>
     </nav>
 
-
-    <form class="contact-form" id="contact-form" method="POST">
-        <h2 class="contact-header" id="contact-header">Contact us!</h2>
-        <div class="contact-container--userdate">
-            <span class="icon"><i class="fa fa-grin"></i></span>
-            <input placeholder="First Name..." class="contact-input" name="first-name" id="first-name" type="text">
+    <div class="mapAndForm">
+        <div class="map">
+            <h2 class="mapheader">Find us!</h2>
+            <iframe class="mapimage" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111253.70489716037!2d-50.93650835872723!3d-29.379707898983185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951932427804321f%3A0xa71c25f081e5aea6!2sGramado%2C%20R%C3%ADo%20Grande%20del%20Sur%2C%20Brasil!5e0!3m2!1ses!2sve!4v1620246395808!5m2!1ses!2sve" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="contact-container--userdate">
-            <span class="icon"><i class="fa fa-grin"></i></span>
-            <input placeholder="Last Name..." class="contact-input" name="last-name" id="last-name" type="text">
-        </div>
-        <div class="contact-container--subject">
-            <span class="icon"><i class="fa fa-question"></i></span>
-            <input placeholder="Subject..." class="contact-input" name="subject" id="subject" type="text">
-        </div>
-        <div class="contact-container--message">    
-            <span class="icon-message"><i class="fa fa-envelope"></i></span>
-            <textarea rows="10" placeholder="Your message..." class="contact-input--textarea" name="message" id="message"></textarea>
-        </div>
-        <input class="contact-input--submit" id="contact-button" value="ENVIAR" type="submit">
-    </form>
+        <form class="contact-form" id="contact-form" method="POST">
+            <h2 class="contact-header" id="contact-header">Contact us!</h2>
+            <div class="contact-container--userdate">
+                <span class="icon"><i class="fa fa-grin"></i></span>
+                <input placeholder="First Name..." class="contact-input" name="first-name" id="first-name" type="text">
+            </div>
+            <div class="contact-container--userdate">
+                <span class="icon"><i class="fa fa-grin"></i></span>
+                <input placeholder="Last Name..." class="contact-input" name="last-name" id="last-name" type="text">
+            </div>
+            <div class="contact-container--subject">
+                <span class="icon"><i class="fa fa-question"></i></span>
+                <input placeholder="Subject..." class="contact-input" name="subject" id="subject" type="text">
+            </div>
+            <div class="contact-container--message">    
+                <span class="icon-message"><i class="fa fa-envelope"></i></span>
+                <textarea rows="10" placeholder="Your message..." class="contact-input--textarea" name="message" id="message"></textarea>
+            </div>
+            <input class="contact-input--submit" id="contact-button" value="SEND" type="submit">
+        </form>
+    </div>
     <script src="js/contact-form.js"></script>  
     <script src="js/nav-bar.js"></script>  
 </body>

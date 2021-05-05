@@ -4,7 +4,29 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.mapAndForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.map{
+    flex-basis: 100%;
+    height: 100%;
+}
+.mapheader{
+    width: 100%;
+    padding: 3% 5%;
+    text-align: center;
+    background-color: #58c;
+    color: white;
+}
+.mapimage{
+    width: 100%;
+    height: 70vh;
+}
 .contact-form{
+    flex-basis: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,8 +167,31 @@ input::placeholder, textarea::placeholder{
     color: #ddd;
 }
 @media screen and (min-width:1000px) and (max-width:1800px){
+    .mapAndForm{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #58c;
+    }
+    .map{
+        flex-basis: 50%;
+        height: 100%;
+    }
+    .mapheader{
+        width: 100%;
+        padding: 3% 5%;
+        text-align: center;
+        background-color: #58c;
+        color: white;
+    }
+    .mapimage{
+        width: 100%;
+        height: 70vh;
+        margin: 2%;
+        border-radius: 5px;
+    }
     .contact-form{
-        margin: 0% 20%;
+        flex-basis: 50%;
     }
     .contact-header{
         flex-basis: 100%;
