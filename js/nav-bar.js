@@ -6,4 +6,4 @@ displayButton.addEventListener("click", () =>{
 });
 hideButton.addEventListener("click", () =>{
     navbar.style.right ="-100%";
-});
+}); 
