@@ -6,126 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <script src="https://kit.fontawesome.com/3a818f0c15.js" crossorigin="anonymous"></script>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .contact-form{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            background-color: #58c;
-            padding: 5%;
-            color: #eee;
-        }
-        .contact-header{
-            flex-basis: 100%;
-            text-align: center;
-            margin-bottom: 2%;
-            border-bottom: 5px solid #ddd;
-            font-size: 4vw;
-        }
-        .contact-container--userdate{
-            flex-basis: 50%;
-            padding: .5vw;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-            margin-top: 5%;
-        }
-        .contact-container--subject{
-            flex-basis: 100%;
-            padding: .5vw;
-            
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 2%;
-        }
-        .contact-container--message{
-            flex-basis: 100%;
-            padding: .5vw;
-            
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 3%;
-        }
-        .contact-label{
-            display: block;
-            flex-basis: 100%;
-            margin: 2%;
-            font-size: 3vw;
-        }
-        .icon{
-            flex-basis: 10%;
-            color: #58c;
-            background-color: #fff;
-            text-align: center;
-            padding: 3% 2%;
-            height: 100%;
-            margin: none;
-            display: inline-block;
-            align-self: center;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            
-        }
-        .contact-input{
-            flex-basis: 90%;
-            border: none;
-            background-color: transparent;
-            border: .3vh solid #fff;
-            outline: none;
-            padding: 3% 2%;
-            color: #fff ;
-            
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-        .contact-input--textarea{
-            resize: none;
-            flex-basis: 90%;
-            border: none;
-            background-color: transparent;
-            border: .3vh solid #fff;
-            outline: none;
-            padding: 1% 2%;
-            color: #eee ;
-            
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-        }
-        input::placeholder, textarea::placeholder{
-            color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="css/contact-form.css">
 </head>
 <body>
-
     <form class="contact-form" id="contact-form" method="POST">
         <h2 class="contact-header" id="contact-header">Contact us!</h2>
         <div class="contact-container--userdate">
-            <i class="fa fa-grin icon"></i>
+            <span class="icon"><i class="fa fa-grin"></i></span>
             <input placeholder="First Name..." class="contact-input" name="first-name" id="first-name" type="text">
         </div>
         <div class="contact-container--userdate">
-            <i class="fa fa-grin icon"></i>
+            <span class="icon"><i class="fa fa-grin"></i></span>
             <input placeholder="Last Name..." class="contact-input" name="last-name" id="last-name" type="text">
         </div>
         <div class="contact-container--subject">
-            <i class="fa fa-question icon"></i>
+            <span class="icon"><i class="fa fa-question"></i></span>
             <input placeholder="Subject..." class="contact-input" name="subject" id="subject" type="text">
         </div>
         <div class="contact-container--message">    
-            <i class="fa fa-envelope icon"></i>    
+            <span class="icon-message"><i class="fa fa-envelope"></i></span>
             <textarea rows="10" placeholder="Your message..." class="contact-input--textarea" name="message" id="message"></textarea>
         </div>
+        <input class="contact-input--submit" id="contact-button" value="ENVIAR" type="submit">
     </form>
-    
+    <script src="js/contact-form.js"></script>  
 </body>
 </html>
