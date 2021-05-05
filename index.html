@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <script src="https://kit.fontawesome.com/3a818f0c15.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/3a818f0c15.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+
+    <style>
+
+
+    </style>
 </head>
 <body>
+    <nav class="nav-bar">
+        <h1 class="nav-bar-header">WebPage</h1>
+        <a class="nav-bar__a" href="#">Home</a>
+        <a class="nav-bar__a" href="#">Our services</a>
+        <a class="nav-bar__a" href="#contact-form">Contact us!</a>
+        <button class="display-menu" id="display-menu">ss<i class="fa fa-bars"></i></button>
+    </nav>
+
+    <nav id="nav-bar--hid">
+        <a class="nav-bar--hid__a" href="#">Home</a>
+        <a class="nav-bar--hid__a" href="#">Our services</a>
+        <a class="nav-bar--hid__a" href="#contact-form">Contact us!</a>
+        <button id="hide-menu" class="nav-bar--hid__a">Cerrar</button>
+    </nav>
+
+
     <form class="contact-form" id="contact-form" method="POST">
         <h2 class="contact-header" id="contact-header">Contact us!</h2>
         <div class="contact-container--userdate">
@@ -29,6 +51,13 @@
         </div>
         <input class="contact-input--submit" id="contact-button" value="ENVIAR" type="submit">
     </form>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
     <script src="js/contact-form.js"></script>  
+    <script src="js/nav-bar.js"></script>  
 </body>
 </html>
